@@ -1,0 +1,17 @@
+#separator:tab
+#html:false
+#guid column:1
+#notetype column:2
+#deck column:3
+#tags column:6
+CLjGsS^Xm}	Basic	Windows logging	Security log	A log that contain security-related events (eg: login/logout) specified by the auditing policy	Definition
+"PV|$XGz#~k"	Basic	Windows logging	4624	An account that successfully log on	Definition
+G|xaT=^tg@	Basic	Windows logging	4625	An account failed to log in	Definition
+"N%pMk>v.#("	Basic	Windows logging	4672	Special priviledge assigned to new logon	Definition
+ezdtkPF8mI	Basic	Windows logging	4688	A new process has been created	Definition
+L4@j<_GF|s	Basic	Windows logging	4720	A user account was created	Definition
+n)0@4aCcVe	Basic	Windows logging	4732	A member was added to a security-enabled local group	Definition
+fU!cCN&0iL	Basic	Windows logging	4672 vs 4732: what is the difference?	4672 is a privileged logon. 4732 is a group membership change	VS
+z@3<:Lle<H	Basic	Windows logging	What turns on event 4688?	Audit Process Creation, under Detailed Tracking in advanced audit policy	
+DvGA+@VE?[	Basic	Windows logging	4688 shows an empty command line. Why?	Include command line in process creation events is off. It's a Group Policy setting under Administrative Templates > System > Audit Process Creation	Logic
+nYYQ(Pty/&	Basic	Windows logging	Which 4625 field shows why a logon failed?	Status and Sub Status, for example wrong password versus no such user	Logic
